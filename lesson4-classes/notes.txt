@@ -1,0 +1,59 @@
+-TypeScript offers full support for the class keyword introduced in ES2015.
+
+- Class Member 
+ --props and methods are called member
+
+
+
+--strictPropertyInitialization
+  --- The strictPropertyInitialization setting controls whether class fields need to be initialized in the constructor.
+
+
+
+
+-------------------------MEMBER VISIVILITY ------------------------------------
+
+
+-You can use TypeScript to control whether certain methods or properties are visible to code outside the class.
+
+
+1- public
+  --The default visibility of class members is public. A public member can be accessed anywhere
+
+2- protected 
+  --protected members are only visible to subclasses of the class they’re declared in.
+  -- not accessed from external code
+  -- Using protected member types can help to improve the encapsulation and abstraction of your code, making it easier to reason about and maintain.
+
+
+
+3- private
+  --private is like protected, but doesn’t allow access to the member even from
+  
+  
+
+
+
+
+-Visibility modifiers 
+-readonly modifier
+  --This prevents assignments to the field outside of the constructor.
+
+
+
+
+-------------------------------------------------------------
+
+-overloading 
+  -- TypeScript supports method overloading
+  -- allows you to define multiple methods with the same name but with different parameter types and/or number of parameters. When calling an overloaded method, 
+    TypeScript will choose the method with the best match for the given arguments.
+
+  --   
+    
+
+-GETTERS AND SETTERS
+ --If get exists but no set, the property is automatically readonly
+
+
+ 
