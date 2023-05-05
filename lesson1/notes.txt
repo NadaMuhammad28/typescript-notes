@@ -1,0 +1,36 @@
+1- create ts config file
+
+-    "noEmitOnError": true /* Disable emitting files if any type checking errors are reported. */,
+will not compile js if there's an err in ts
+
+
+ -   "outDir": "./build/js" /* Specify an output folder for all emitted files. */,
+
+ build->js
+
+tsc -w 
+------------TERMINOLOGY------------------
+
+1-STRONGLY TYPED LANGUAGE: language that demands the vars types -->ts
+2-LOOSLY Y TYPED LANGUAGE --> js
+
+3- STATICALLY TYPED LANG:  types are checked at compiled time --> ts
+   BEnFITS:
+   * catching errs in dev
+   * great for teams
+
+4- DINAMICALLY TYPED LANG:  types are checked at RUN time --> js
+
+------------------------------TYPES-----------------------------------------
+1- string
+2-boolean
+3- number
+4- any
+5- regexp
+6- union type- --> type1 | type2 |etc..
+
+
+--------------------------TUPLES--------------------------
+array that have specified types of every index and have prespecified length
+- you can assign a tuple to an array of same type but you cannot assign an array to a tuple --> why?
+   -- cuz the length of the array may change
