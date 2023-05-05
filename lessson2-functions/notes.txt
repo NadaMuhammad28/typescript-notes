@@ -1,0 +1,31 @@
+- Type aliases
+-- make our code DRY
+-- reassignable to each other
+1- union type
+2- reassignable 
+3- type renaming 
+
+- Type literal
+ -- will stick to specific values and no others
+let myName: "nada" | "john
+
+-optional params
+ --must be at the end of args 
+ -- can't use type/interface if there're opt params???
+
+
+
+ -type guards
+  -- a function with a boolean return to check if a certain val from that type or not, useful for DRY
+
+const isNum = (a: any): boolean => {
+  return !isNaN(a);
+};
+
+- never type
+   -- can happen from: 
+   -- function that could have infinite loop
+   -- functions that only throw errs
+   --use it to return an err if a certain function has only speciefied vals and the user enters another tpe  
+
+   
