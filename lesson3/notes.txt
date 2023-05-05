@@ -1,0 +1,45 @@
+- Type Aliases
+
+  --A type alias is exactly that - a name for any type. The syntax for a type alias is:
+
+type Point = {
+  x: number;
+  y: number;
+};
+
+
+type ID = number | string;
+
+--------------------------------------------------------------------------------------------
+
+- Interfaces
+
+  --An interface declaration is another way to name an object type:
+
+
+
+- Differences Between Type Aliases and Interfaces
+
+https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#differences-between-type-aliases-and-interfaces
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+-Type Assertions (casting)
+
+-- Reminder: Because type assertions are removed at compile-time, 
+   there is no runtime checking associated with a type assertion.
+   There won’t be an exception 
+   or null generated if the type assertion is wrong.
+
+--assertions is like telling the compiler that yk more abt the type
+ --what can i do with assertions?
+   --convet to a more specific or less specific type
+
+-- typeScript only allows type assertions which convert to a more specific or less specific version of a type.
+   This rule prevents “impossible” coercions like:
